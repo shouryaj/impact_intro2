@@ -1,6 +1,7 @@
 import * as React from 'react';
 import './App.css';
 import Description from './Description';
+import SimpleCountButton from './SimpleCountButton';
 import Header from './Header';
 import logo from './logo.svg';
 
@@ -13,7 +14,8 @@ class App extends React.Component {
                     <Header name="REACT" />
                 </header>
                 <Description countBy={3} />
-            </div>
+                <SimpleCountButton />
+            </div>           
         );
     }
 }
