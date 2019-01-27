@@ -9,7 +9,7 @@ const Header: React.SFC<IProps> = (props: IProps) => (
 );
 
 Header.defaultProps = {
-    name: 'world',
+    name: 'World!',
 };
 
 export default Header;
