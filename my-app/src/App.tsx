@@ -10,7 +10,7 @@ class App extends React.Component {
             <div className="App">
                 <header className="App-header">
                     <img src={logo} className="App-logo" alt="logo" />
-                    <Header name="TEST" />
+                    <Header name="Impact++" />
                 </header>
                 <Description countBy={8} />
             </div>
