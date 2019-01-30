@@ -1,8 +1,8 @@
 import * as React from 'react';
 import './App.css';
-import Description from './Description';
-import Header from './Header';
-import logo from './logo.svg';
+import Body from "./Body";
+import Headbar from "./Headbar";
+import Sidebar from "./Sidebar";
 
 class App extends React.Component {
     public render() {
@@ -13,6 +13,9 @@ class App extends React.Component {
                     <Header name="Impact++" />
                 </header>
                 <Description countBy={3} />
+                <Headbar/>
+                <Sidebar/>
+                <Body/>
             </div>
         );
     }
