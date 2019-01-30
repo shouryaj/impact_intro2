@@ -22,12 +22,24 @@ class Description extends React.Component<IProps, IState> {
         const count = this.state.count + countBy;
         this.setState({ count });
     };
+    public decrease = () => {
+        const countBy: number = this.props.countBy!;
+        const count = this.state.count - countBy;
+        this.setState({count});
+    }
+
+    public setToZero = () => {
+        const count = 0;
+        this.setState({count});
+    }
 
     public render() {
         return (
             <div>
                 <p>My favorite number is {this.state.count}</p>
                 <button onClick={this.increase}>Increase</button>
+                <button onClick={this.decrease}>Decrease</button>
+                <button onClick={this.setToZero}>Zero</button>
             </div>
         );
     }
